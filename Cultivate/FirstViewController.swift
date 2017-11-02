@@ -9,7 +9,15 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
+    @IBOutlet weak var label: UILabel!
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        let title = sender.title(for: .normal)!
+        
+        label.text = "You clicked the \(title) button"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
