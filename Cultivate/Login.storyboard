@@ -1,7 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W4Y-Si-Jq5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Jui-5r-J33">
+            <objects>
+                <viewController id="W4Y-Si-Jq5" customClass="LoginViewController" customModule="Cultivate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eit-v6-IDJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="User ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WN7-Qe-oQd">
+                                <rect key="frame" x="16" y="120" width="343" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hcg-tO-I8V">
+                                <rect key="frame" x="16" y="186" width="343" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qea-qL-raJ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Log In" id="eza-cg-1m6"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hcg-tO-I8V" firstAttribute="leading" secondItem="TDs-Zx-Ltq" secondAttribute="leading" constant="16" id="1OJ-MF-Y5V"/>
+                            <constraint firstItem="hcg-tO-I8V" firstAttribute="centerX" secondItem="TDs-Zx-Ltq" secondAttribute="centerX" id="5zY-0u-MJB"/>
+                            <constraint firstItem="qea-qL-raJ" firstAttribute="centerX" secondItem="WN7-Qe-oQd" secondAttribute="centerX" id="Dgv-a8-wfa"/>
+                            <constraint firstItem="qea-qL-raJ" firstAttribute="centerX" secondItem="hcg-tO-I8V" secondAttribute="centerX" id="M2a-xA-TkX"/>
+                            <constraint firstItem="qea-qL-raJ" firstAttribute="top" secondItem="TDs-Zx-Ltq" secondAttribute="top" id="ViC-lZ-nVn"/>
+                            <constraint firstItem="TDs-Zx-Ltq" firstAttribute="trailing" secondItem="hcg-tO-I8V" secondAttribute="trailing" constant="16" id="Y5L-BD-238"/>
+                            <constraint firstItem="WN7-Qe-oQd" firstAttribute="top" secondItem="qea-qL-raJ" secondAttribute="bottom" constant="56" id="Y5W-SG-5qc"/>
+                            <constraint firstItem="hcg-tO-I8V" firstAttribute="top" secondItem="WN7-Qe-oQd" secondAttribute="bottom" constant="44" id="c94-kt-Fxu"/>
+                            <constraint firstItem="WN7-Qe-oQd" firstAttribute="leading" secondItem="TDs-Zx-Ltq" secondAttribute="leading" constant="16" id="cag-PP-xaj"/>
+                            <constraint firstItem="WN7-Qe-oQd" firstAttribute="centerX" secondItem="TDs-Zx-Ltq" secondAttribute="centerX" id="grH-Cq-RbU"/>
+                            <constraint firstItem="TDs-Zx-Ltq" firstAttribute="trailing" secondItem="WN7-Qe-oQd" secondAttribute="trailing" constant="16" id="jy6-HX-ti6"/>
+                            <constraint firstItem="TDs-Zx-Ltq" firstAttribute="trailing" secondItem="qea-qL-raJ" secondAttribute="trailing" id="wgJ-4J-Bk5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TDs-Zx-Ltq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z2i-Bp-gBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439.19999999999999" y="-47.290640394088669"/>
+        </scene>
+    </scenes>
 </document>

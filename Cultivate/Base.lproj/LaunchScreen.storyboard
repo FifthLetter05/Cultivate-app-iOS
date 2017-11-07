@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,26 +21,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cultivate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2C-MM-Qz0">
-                                <rect key="frame" x="82.5" y="300.5" width="210" height="66"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="bQQ-kW-3wX">
+                                <rect key="frame" x="68" y="269" width="239" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="210" id="a8V-ha-eoe"/>
+                                    <constraint firstAttribute="height" constant="128" id="Na4-KQ-RTK"/>
+                                    <constraint firstAttribute="width" constant="239" id="j2Y-V5-mAV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="N2C-MM-Qz0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="356-Po-rRN"/>
-                            <constraint firstItem="N2C-MM-Qz0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="CRe-LD-fM2"/>
+                            <constraint firstItem="bQQ-kW-3wX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uBq-Sn-JwC"/>
+                            <constraint firstItem="bQQ-kW-3wX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="wZx-Pj-uVd"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51.724137931034484" y="373.60000000000002"/>
+            <point key="canvasLocation" x="50.399999999999999" y="372.86356821589209"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="589" height="501"/>
+    </resources>
 </document>
