@@ -9,27 +9,45 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBOutlet weak var id: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
+    @IBAction func login(_ sender: UIButton) {
+        //lowers keyboard
+        self.id.resignFirstResponder()
+        self.password.resignFirstResponder()
+        
+        var cancel = false
+        
+        if id.text!.isEmpty {
+            cancel = true
+        }
+        
+        if cancel {
+            
+        }else{
+            
+        }
     }
     
-
+    //checks if id is valid
+    private func isIdValid(id: String) -> Bool{
+        //TODO
+        return true
+    }
     
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //checks if password is valid
+    private func isPasswordValid(password: String) -> Bool{
+        //TODO
+        return true
+    }
+    
+    //lowers keyboard on touching background
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
  
+    
 
 }
