@@ -10,35 +10,54 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    @IBOutlet weak var id: UITextField!
+    @IBOutlet weak var code: UITextField!
     @IBOutlet weak var password: UITextField!
     
     @IBAction func login(_ sender: UIButton) {
         //lowers keyboard
-        self.id.resignFirstResponder()
-        self.password.resignFirstResponder()
+        code.resignFirstResponder()
+        password.resignFirstResponder()
         
+        //checks if info is valid before checking
         var cancel = false
         
-        if id.text!.isEmpty {
+        let title = "Error"
+        
+        if code.text!.isEmpty {
+            alertWithTitle(title, "This field is required", code, ViewController: self)
+            cancel = true
+        } else if !isIdValid(code.text!){
+            alertWithTitle(title, "The email address is invalid", code, ViewController: self)
             cancel = true
         }
         
-        if cancel {
-            
-        }else{
+        if !password.text!.isEmpty && !isPasswordValid(password.text!){
+            alertWithTitle(title, "The password is incorrect", password, ViewController: self)
+            cancel = true
+        }
+        
+        if !cancel {
             
         }
     }
     
+    private func alertWithTitle(_ title: String!, _ message: String, _ focus: UIView, ViewController: UIViewController){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK!", style: .cancel, handler: { (UIAlertAction) -> Void in
+            focus.becomeFirstResponder()
+        })
+        alert.addAction(action)
+        ViewController.present(alert, animated: true, completion: nil)
+    }
+    
     //checks if id is valid
-    private func isIdValid(id: String) -> Bool{
+    private func isIdValid(_ id: String) -> Bool{
         //TODO
         return true
     }
     
     //checks if password is valid
-    private func isPasswordValid(password: String) -> Bool{
+    private func isPasswordValid(_ password: String) -> Bool{
         //TODO
         return true
     }
