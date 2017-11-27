@@ -8,15 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		8405250B1FAE5362000F9504 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405250A1FAE5362000F9504 /* LoginViewController.swift */; };
-		8409E4031FA58B2400321DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409E4021FA58B2400321DC2 /* AppDelegate.swift */; };
-		8409E4051FA58B2400321DC2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409E4041FA58B2400321DC2 /* FirstViewController.swift */; };
 		8409E4071FA58B2400321DC2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409E4061FA58B2400321DC2 /* SecondViewController.swift */; };
 		8409E40A1FA58B2400321DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8409E4081FA58B2400321DC2 /* Main.storyboard */; };
 		8409E40C1FA58B2400321DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8409E40B1FA58B2400321DC2 /* Assets.xcassets */; };
 		8409E40F1FA58B2400321DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8409E40D1FA58B2400321DC2 /* LaunchScreen.storyboard */; };
 		8409E41A1FA58B2400321DC2 /* CultivateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409E4191FA58B2400321DC2 /* CultivateTests.swift */; };
 		8409E4251FA58B2400321DC2 /* CultivateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409E4241FA58B2400321DC2 /* CultivateUITests.swift */; };
-		84C5390B1FAAC559000A85C1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C5390A1FAAC559000A85C1 /* Login.storyboard */; };
+		8411576F1FC8FFD400575C8E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8411576D1FC8FFD300575C8E /* Login.storyboard */; };
+		841157BE1FC94A0B00575C8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841157BD1FC94A0A00575C8E /* AppDelegate.swift */; };
+		841157C21FC94AD100575C8E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841157BF1FC94AC900575C8E /* DetailViewController.swift */; };
+		841157C41FC94AD100575C8E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841157C11FC94ACC00575C8E /* MasterViewController.swift */; };
+		84F7E74D1FCB8BE00079D549 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7E74C1FCB8BE00079D549 /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 /* Begin PBXFileReference section */
 		8405250A1FAE5362000F9504 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8409E3FF1FA58B2300321DC2 /* Cultivate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cultivate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8409E4021FA58B2400321DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8409E4041FA58B2400321DC2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		8409E4061FA58B2400321DC2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		8409E4091FA58B2400321DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8409E40B1FA58B2400321DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,7 +52,11 @@
 		8409E4201FA58B2400321DC2 /* CultivateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CultivateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8409E4241FA58B2400321DC2 /* CultivateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateUITests.swift; sourceTree = "<group>"; };
 		8409E4261FA58B2400321DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84C5390A1FAAC559000A85C1 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		8411576E1FC8FFD300575C8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		841157BD1FC94A0A00575C8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		841157BF1FC94AC900575C8E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		841157C11FC94ACC00575C8E /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		84F7E74C1FCB8BE00079D549 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +107,15 @@
 		8409E4011FA58B2400321DC2 /* Cultivate */ = {
 			isa = PBXGroup;
 			children = (
-				8409E4021FA58B2400321DC2 /* AppDelegate.swift */,
+				841157BD1FC94A0A00575C8E /* AppDelegate.swift */,
 				8405250A1FAE5362000F9504 /* LoginViewController.swift */,
-				8409E4041FA58B2400321DC2 /* FirstViewController.swift */,
+				841157C11FC94ACC00575C8E /* MasterViewController.swift */,
+				841157BF1FC94AC900575C8E /* DetailViewController.swift */,
+				84F7E74C1FCB8BE00079D549 /* Food.swift */,
 				8409E4061FA58B2400321DC2 /* SecondViewController.swift */,
 				8409E40B1FA58B2400321DC2 /* Assets.xcassets */,
 				8409E40D1FA58B2400321DC2 /* LaunchScreen.storyboard */,
-				84C5390A1FAAC559000A85C1 /* Login.storyboard */,
+				8411576D1FC8FFD300575C8E /* Login.storyboard */,
 				8409E4081FA58B2400321DC2 /* Main.storyboard */,
 				8409E4101FA58B2400321DC2 /* Info.plist */,
 			);
@@ -241,9 +247,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C5390B1FAAC559000A85C1 /* Login.storyboard in Resources */,
 				8409E40F1FA58B2400321DC2 /* LaunchScreen.storyboard in Resources */,
 				8409E40C1FA58B2400321DC2 /* Assets.xcassets in Resources */,
+				8411576F1FC8FFD400575C8E /* Login.storyboard in Resources */,
 				8409E40A1FA58B2400321DC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,10 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841157BE1FC94A0B00575C8E /* AppDelegate.swift in Sources */,
 				8409E4071FA58B2400321DC2 /* SecondViewController.swift in Sources */,
-				8409E4031FA58B2400321DC2 /* AppDelegate.swift in Sources */,
+				841157C41FC94AD100575C8E /* MasterViewController.swift in Sources */,
+				841157C21FC94AD100575C8E /* DetailViewController.swift in Sources */,
 				8405250B1FAE5362000F9504 /* LoginViewController.swift in Sources */,
-				8409E4051FA58B2400321DC2 /* FirstViewController.swift in Sources */,
+				84F7E74D1FCB8BE00079D549 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +330,14 @@
 				8409E40E1FA58B2400321DC2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8411576D1FC8FFD300575C8E /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8411576E1FC8FFD300575C8E /* Base */,
+			);
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -440,12 +456,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Cultivate/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coop.cultivatecommunityfood.Cultivate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -455,12 +471,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Cultivate/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coop.cultivatecommunityfood.Cultivate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

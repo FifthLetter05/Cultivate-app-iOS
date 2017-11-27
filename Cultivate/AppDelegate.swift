@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Cultivate
+//  Tmp
 //
-//  Created by Adam Mollca on 10/28/17.
+//  Created by Adam Mollca on 11/24/17.
 //  Copyright © 2017 Cultivate Community co-op. All rights reserved.
 //
 
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         return true
     }
 
@@ -40,7 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 
