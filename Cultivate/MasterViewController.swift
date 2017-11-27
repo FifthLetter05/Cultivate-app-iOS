@@ -47,10 +47,17 @@ class MasterViewController: UITableViewController, UISplitViewControllerDelegate
 
     @objc
     func insertNewObject(_ sender: Any) {
-        
-        objects.insert(Food(name: "default"), at: 0)
-        let indexPath = IndexPath(row: 0, section: 0)
-        tableView.insertRows(at: [indexPath], with: .automatic)
+        let input = UIAlertController(title: "Add item", message: "What food item to add?", preferredStyle: .alert)
+        input.addTextField(configurationHandler: {(textField: UITextField) -> Void in
+            textField.placeholder = "food"
+        })
+        let action = UIAlertAction(title: "Add", style: .cancel, handler: {(action: UIAlertAction) -> Void in
+            self.objects.insert(Food(name: input.textFields![0].text!), at: 0)
+            let indexPath = IndexPath(row: 0, section: 0)
+            self.tableView.insertRows(at: [indexPath], with: .automatic)
+        })
+        input.addAction(action)
+        self.present(input, animated: true, completion: nil)
     }
 
     // MARK: - Segues
