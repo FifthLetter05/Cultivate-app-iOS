@@ -10,12 +10,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    @IBOutlet weak var code: UITextField!
+    @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     
     @IBAction func login(_ sender: UIButton) {
         //lowers keyboard
-        code.resignFirstResponder()
+        email.resignFirstResponder()
         password.resignFirstResponder()
         
         //checks if info is valid before checking
@@ -23,15 +23,15 @@ class LoginViewController: UIViewController {
         
         let title = "Error"
         
-        if code.text!.isEmpty {
-            alertWithTitle(title, "This field is required", code, ViewController: self)
+        if email.text!.isEmpty {
+            alertWithTitle(title, "This field is required", email, ViewController: self)
             cancel = true
-        } else if !isIdValid(code.text!){
-            alertWithTitle(title, "The email address is invalid", code, ViewController: self)
+        } else if !isEmailValid(email.text!){
+            alertWithTitle(title, "The email address is invalid", email, ViewController: self)
             cancel = true
         }
         
-        if !password.text!.isEmpty && !isPasswordValid(password.text!){
+        if !isPasswordValid(password.text!){
             alertWithTitle(title, "The password is incorrect", password, ViewController: self)
             cancel = true
         }
@@ -39,6 +39,11 @@ class LoginViewController: UIViewController {
         if !cancel {
             
         }
+    }
+    
+    private func checkWithServer(email: String, password: String){
+        //TODO
+        
     }
     
     private func alertWithTitle(_ title: String!, _ message: String, _ focus: UIView, ViewController: UIViewController){
@@ -51,14 +56,18 @@ class LoginViewController: UIViewController {
     }
     
     //checks if id is valid
-    private func isIdValid(_ id: String) -> Bool{
-        //TODO
+    private func isEmailValid(_ id: String) -> Bool{
+        if id.contains("@"){
+            return false
+        }
         return true
     }
     
     //checks if password is valid
     private func isPasswordValid(_ password: String) -> Bool{
-        //TODO
+        if password.isEmpty{
+            return false
+        }
         return true
     }
     
